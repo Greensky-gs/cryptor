@@ -13,10 +13,11 @@ export default function caesarCryptor({ input, sens = 'alphabetic', gap }: Caesa
         const initialPosition = inputLetters.indexOf(ch);
 
         if (sens === 'alphabetic') {
-            cr = inputLetters[(initialPosition + gap) % inputLetters.length];
+            cr = inputLetters[initialPosition + gap];
+            if (!cr) cr = inputLetters[inputLetters.length - (initialPosition + gap)];
         } else {
             cr = inputLetters[initialPosition - gap];
-            if (!cr) cr = inputLetters[inputLetters.length - (gap - initialPosition) + 1];
+            if (!cr) cr = inputLetters[inputLetters.length - (initialPosition - gap) - 1];
         }
         crypted += cr;
     }
