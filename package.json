@@ -1,0 +1,12 @@
+{
+  "name": "cryptor",
+  "version": "1.0.0",
+  "description": "Sourcode code of cryptor package",
+  "main": "dist/index.js",
+  "repository": "https://github.com/Greensky-gs/cryptor",
+  "author": "Greensky <david.hesliere@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^2.7.1"
+  }
+}
