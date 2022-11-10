@@ -1,0 +1,1 @@
+export default "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\"'{}[]\\/,?;.:/!§*$£ù%^¨1234567890#~<>-+@_&=";
