@@ -1,12 +1,36 @@
 {
   "name": "cryptor",
   "version": "1.0.0",
-  "description": "Sourcode code of cryptor package",
+  "description": "Source code of cryptor package",
   "main": "dist/index.js",
   "repository": "https://github.com/Greensky-gs/cryptor",
   "author": "Greensky <david.hesliere@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "prettier": "^2.7.1"
-  }
+    "prettier": "^2.7.1",
+    "tsc": "^2.0.4",
+    "typescript": "^4.8.4"
+  },
+  "scripts": {
+    "build": "tsc -b"
+  },
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    },
+    "./src/*": "./dist/*",
+    "./dist/*": "./dist/*"
+  },
+  "module": "dist/index.mjs",
+  "bugs": {
+    "url": "https://github.com/Greensky-gs/cryptor/issues"
+  },
+  "keywords": [
+    "cryptor",
+    "cipher"
+  ]
 }
